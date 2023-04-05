@@ -1,0 +1,12 @@
+{
+    "Author": "McSwindler",
+    "Name": "Island Sprinter",
+    "Punchline": "Replaces Sprint with Isle Sprint when in an Island Sanctuary",
+    "Description": "Replaces Sprint with Isle Sprint when in an Island Sanctuary",
+    "InternalName": "islandSprinter",
+    "ApplicableVersion": "any",
+    "Tags": [
+        "island",
+        "sprint"
+    ]
+}
