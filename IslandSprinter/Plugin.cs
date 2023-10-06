@@ -1,5 +1,5 @@
 using Dalamud.Plugin;
-using Dalamud.Game.ClientState;
+using Dalamud.Plugin.Services;
 
 namespace IslandSprinter
 {
@@ -10,8 +10,8 @@ namespace IslandSprinter
 
         private readonly Sprinter sprinter;
 
-        public Plugin(DalamudPluginInterface pluginInterface, ClientState clientState) {
-            sprinter = new Sprinter(clientState);
+        public Plugin(DalamudPluginInterface pluginInterface, IClientState clientState, IGameInteropProvider gameInteropProvider) {
+            sprinter = new Sprinter(clientState, gameInteropProvider);
             sprinter.Initialize();
         }
 
